@@ -1,11 +1,7 @@
 from setuptools import find_packages , setup
 from typing import List
 
-HYPEN_E_DOT = "-e ." # it is map to setup.py
-
-# file_path: str means the file_path argument is a string that represents the path to the file you want to open.
-# List[str] means each item in the list will be a string.
-# -> return type hint ,It is purely optional and serves as a type hint to improve code clarity and help with static analysis.
+HYPEN_E_DOT = "-e ." 
 
 def get_requirements(file_path:str)->List[str]:
     """

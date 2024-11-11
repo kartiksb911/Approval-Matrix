@@ -1,7 +1,8 @@
 from sklearn.model_selection import train_test_split
 from src.logger import logging
 from src.exception import CustomException
-import sys
+import sys,os
+import dill
 
 def train_test_split_data(data,test_percentage=0.2):
     try:
@@ -10,3 +11,11 @@ def train_test_split_data(data,test_percentage=0.2):
     except Exception as e:
         raise CustomException(e,sys)
     
+def save_object(file_path,obj):
+    try:
+        dir_path=os.path.dirname(file_path)
+        os.makedirs(dir_path, exist_ok=True)
+        with open(file_path,"wb") as file_obj:
+            dill.dump(obj,file_obj)
+    except Exception as e:
+        raise CustomException(e,sys)        
