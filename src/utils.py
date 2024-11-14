@@ -1,8 +1,11 @@
+import os
+import sys
+import dill
 from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score, confusion_matrix, classification_report, roc_auc_score
 from src.logger import logging
 from src.exception import CustomException
-import sys,os
-import dill
+
 
 def train_test_split_data(data,test_percentage=0.2):
     try:
@@ -18,4 +21,16 @@ def save_object(file_path,obj):
         with open(file_path,"wb") as file_obj:
             dill.dump(obj,file_obj)
     except Exception as e:
-        raise CustomException(e,sys)        
+        raise CustomException(e,sys)  
+
+def load_object(file_path):
+    try:
+        with open(file_path,"rb") as file_obj:
+            return dill.load(file_obj)
+    except Exception as e:
+        raise CustomException(e,sys)    
+
+    
+
+
+   

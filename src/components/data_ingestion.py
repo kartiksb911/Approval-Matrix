@@ -5,6 +5,7 @@ from src.exception import CustomException
 from dataclasses import dataclass
 from src.utils import train_test_split_data
 from src.components.data_transformation import DataTransformation,DataTransformationConfig
+from src.components.model_trainer import ModelTrainerConfig,ModelTrainer
 
 @dataclass
 class DataIngestionConfig:
@@ -18,6 +19,9 @@ class DataIngestion:
 
     def initiate_data_ingestion(self):
         try:
+            data_file_path = "notebook/data/loan_data.csv"
+            if not os.path.exists(data_file_path):
+                raise FileNotFoundError(f"CSV file not found at {data_file_path}")
     
             df = pd.read_csv("notebook/data/loan_data.csv")
             logging.info("reading the csv data")
@@ -43,4 +47,6 @@ if __name__=="__main__":
 
      data_transformation=DataTransformation()
      train_arr,test_arr,_=data_transformation.initiate_data_transformation(train_path,test_path)
-        
+
+     model_trainer=ModelTrainer()
+     print(model_trainer.initiate_model_trainer(train_arr,test_arr))   
