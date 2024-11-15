@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Prediction</title>
+</head>
+<body>
+    <h1>Loan Prediction Form</h1>
+    <form action="/predict" method="POST">
+        <label for="person_age">Age:</label><br>
+        <input type="text" id="person_age" name="person_age" required><br><br>
+        
+        <label for="person_income">Income:</label><br>
+        <input type="text" id="person_income" name="person_income" required><br><br>
+
+        <label for="person_emp_exp">Years of Employment Experience:</label><br>
+        <input type="text" id="person_emp_exp" name="person_emp_exp" required><br><br>
+
+        <label for="loan_amnt">Loan Amount:</label><br>
+        <input type="text" id="loan_amnt" name="loan_amnt" required><br><br>
+
+        <label for="loan_int_rate">Loan Interest Rate:</label><br>
+        <input type="text" id="loan_int_rate" name="loan_int_rate" required><br><br>
+
+        <label for="loan_percent_income">Loan Percent of Income:</label><br>
+        <input type="text" id="loan_percent_income" name="loan_percent_income" required><br><br>
+
+        <label for="cb_person_cred_hist_length">Credit History Length (Years):</label><br>
+        <input type="text" id="cb_person_cred_hist_length" name="cb_person_cred_hist_length" required><br><br>
+
+        <label for="credit_score">Credit Score:</label><br>
+        <input type="text" id="credit_score" name="credit_score" required><br><br>
+
+        <label for="person_gender">Gender:</label><br>
+        <select id="person_gender" name="person_gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select><br><br>
+
+        <label for="person_education">Education:</label><br>
+        <select id="person_education" name="person_education">
+            <option value="High School">High School</option>
+            <option value="Associate">Associate Degree</option>
+            <option value="Bachelor">Bachelor's Degree</option>
+            <option value="Master">Master's Degree</option>
+            <option value="PhD">PhD</option>
+        </select><br><br>
+
+        <label for="person_home_ownership">Home Ownership:</label><br>
+        <select id="person_home_ownership" name="person_home_ownership">
+            <option value="Own">Own</option>
+            <option value="Rent">Rent</option>
+            <option value="Mortgage">Mortgage</option>
+        </select><br><br>
+
+        <label for="loan_intent">Loan Intent:</label><br>
+        <select id="loan_intent" name="loan_intent">
+            <option value="Personal">Personal</option>
+            <option value="Business">Business</option>
+            <option value="Other">Other</option>
+        </select><br><br>
+
+        <label for="previous_loan_defaults_on_files">Previous Loan Defaults on File:</label><br>
+        <select id="previous_loan_defaults_on_files" name="previous_loan_defaults_on_files">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
