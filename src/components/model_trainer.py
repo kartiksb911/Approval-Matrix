@@ -40,7 +40,6 @@ class ModelTrainer:
             logging.info(f"Confusion Matrix:\n{conf_matrix}")
             logging.info(f"Classification Report:\n{class_report}")
             save_object(file_path=self.model_trainer_config.trained_model_file_path, obj=xgb_model)
-
            
         except Exception as e:
             raise CustomException(e, sys)
