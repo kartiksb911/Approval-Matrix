@@ -42,6 +42,14 @@ python -m src.components.data_ingestion
 ## Final Report
 * `Accuracy` of the best_model(`XGBoost Classifier`) is `92%`
 * `ROC_AUC` is `97%`
+## Web App
+![Image Alt](https://github.com/kartiksb911/Approval-Matrix/blob/48d95e6c0c327a80eb01738b4b22fe160faddad4/static/Screenshot%20(106).png)
+## Deployment
+![Image Alt](https://github.com/kartiksb911/Approval-Matrix/blob/48d95e6c0c327a80eb01738b4b22fe160faddad4/static/Screenshot%20(108).png)
+## EDA
+![Image Alt](https://github.com/kartiksb911/Approval-Matrix/blob/48d95e6c0c327a80eb01738b4b22fe160faddad4/static/Univariate_Num%20(3).png)
+![Image Alt](https://github.com/kartiksb911/Approval-Matrix/blob/48d95e6c0c327a80eb01738b4b22fe160faddad4/static/Log%20transformation%20(1).png)
+![Image Alt](https://github.com/kartiksb911/Approval-Matrix/blob/48d95e6c0c327a80eb01738b4b22fe160faddad4/static/Univariate_Categorcal%20(3).png)
 ## 🔗 Links
 [![Github](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/kartiksb911)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kartik-bhardwaj-07b7282b7/)
