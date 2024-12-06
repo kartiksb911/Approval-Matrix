@@ -40,8 +40,13 @@ python -m src.components.data_ingestion
 * After running this code, the model will be trained.
 
 ## Final Report
-* `Accuracy` of the best_model(`XGBoost Classifier`) is `92%`
-* `ROC_AUC` is `97%`
+* `f1-score` of the best_model(`XGBoost Classifier`) is `0.95(class 0) and 0.80(class 1)`
+* `weighted avg` is `0.92` 
+* Increase `ROC_AUC` from `89%` to `97%`
+## Link of deployed Web App:
+```
+https://approval-matrix.onrender.com/
+```
 ## Web App
 ![Image Alt](https://github.com/kartiksb911/Approval-Matrix/blob/48d95e6c0c327a80eb01738b4b22fe160faddad4/static/Screenshot%20(106).png)
 ## Deployment
@@ -53,5 +58,10 @@ python -m src.components.data_ingestion
 ## 🔗 Links
 [![Github](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/kartiksb911)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kartik-bhardwaj-07b7282b7/)
-
+## Acknowledgments
+* Hat tip to anyone whose code was used
+* ```
+  https://readme.so/editor
+  ```
+  # Thank You
 
