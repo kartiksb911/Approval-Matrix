@@ -45,7 +45,7 @@ python -m src.components.data_ingestion
 * Increase `ROC_AUC` from `89%` to `97%`
 ## Link of deployed Web App:
 ```
-https://approval-matrix.onrender.com/
+https://approval-matrix.onrender.com
 ```
 ## Web App
 ![Image Alt](https://github.com/kartiksb911/Approval-Matrix/blob/48d95e6c0c327a80eb01738b4b22fe160faddad4/static/Screenshot%20(106).png)
